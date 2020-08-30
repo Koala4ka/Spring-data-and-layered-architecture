@@ -1,13 +1,15 @@
 package com.anna.service;
 
-import com.anna.repository.LaptopRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.anna.entety.Laptop;
 
-@Service
-public class LaptopService {
+import java.util.List;
 
-    @Autowired
-    LaptopRepository laptopRepository;
+public interface LaptopService {
+
+    Laptop save(Laptop laptop);
+
+    List<Laptop> printAll();
+
+    void fillData();
+
 }
-
