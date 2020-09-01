@@ -7,7 +7,9 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -23,6 +25,23 @@ public class LaptopServiceImpl implements LaptopService {
     @Override
     public List<Laptop> printAll() {
         return laptopRepository.findAll();
+    }
+
+    @Override
+    public List<Laptop> sortedByProducer() {
+        return laptopRepository.findAll().stream()
+                .sorted(Comparator.comparing(Laptop::getProducer)
+                        .reversed()).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Laptop> printByRam() {
+        return laptopRepository.printByRam();
+    }
+
+    @Override
+    public List<Laptop> printUsedLaptops() {
+        return laptopRepository.filterByUsed();
     }
 
     @Override

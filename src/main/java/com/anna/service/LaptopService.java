@@ -10,6 +10,13 @@ public interface LaptopService {
 
     List<Laptop> printAll();
 
+    List<Laptop> sortedByProducer();
+
+    List<Laptop> printByRam();
+
+    List<Laptop> printUsedLaptops();
+
     void fillData();
+
 
 }
