@@ -1,5 +1,6 @@
-package com.anna.entety;
+package com.anna.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -8,9 +9,10 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Data
-@Entity
 @ToString
 @NoArgsConstructor
+@AllArgsConstructor
+@Entity
 @Table(name = "laptop")
 public class Laptop {
     @Id
@@ -24,15 +26,4 @@ public class Laptop {
     private String shell;
     private BigDecimal price;
     private String dateOfIssue;
-
-    public Laptop(String model, String producer, String processor, int ram, boolean used, String shell, BigDecimal price, String dateOfIssue) {
-        this.model = model;
-        this.producer = producer;
-        this.processor = processor;
-        this.ram = ram;
-        this.used = used;
-        this.shell = shell;
-        this.price = price;
-        this.dateOfIssue = dateOfIssue;
-    }
 }

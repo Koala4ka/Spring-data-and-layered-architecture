@@ -1,6 +1,6 @@
 package com.anna.service;
 
-import com.anna.entety.Laptop;
+import com.anna.entity.Laptop;
 
 import java.util.List;
 

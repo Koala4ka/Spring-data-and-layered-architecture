@@ -1,6 +1,6 @@
 package com.anna.service.impl;
 
-import com.anna.entety.Laptop;
+import com.anna.entity.Laptop;
 import com.anna.repository.LaptopRepository;
 import com.anna.service.LaptopService;
 import lombok.AllArgsConstructor;
@@ -46,14 +46,14 @@ public class LaptopServiceImpl implements LaptopService {
 
     @Override
     public void fillData() {
-        save(new Laptop("MACBOOK AIR", "APPLE", "Cor i5-10300H", 16, false, "metal", new BigDecimal("25000.00"), "11.03.2019"));
-        save(new Laptop("4LS70ES", "HP", "Cor i3-10200H", 8, true, "plastic", new BigDecimal("7000.00"), "15.06.2017"));
-        save(new Laptop("XPS 13", "DELL", "Intel Core i5-1035G1", 12, true, "aluminium", new BigDecimal("9000.00"), "1.06.2018"));
-        save(new Laptop("MacBook Pro 15", "Apple", "Intel Core i7-9750H", 16, false, "aluminium", new BigDecimal("25000.00"), "1.06.2020"));
-        save(new Laptop("TUF Gaming", "ASUS", "AMD Ryzen 5 3550H", 8, true, "plastic", new BigDecimal("12000.00"), "1.06.2020"));
-        save(new Laptop("Mi Notebook Pro", "Xiaomi", "Intel Core i5-8250U", 14, false, "plastic", new BigDecimal("13000.00"), "1.07.2019"));
-        save(new Laptop("MateBook D 14", "Huawei", "Intel Core i5-8250U", 16, true, "plastic", new BigDecimal("5000.00"), "25.04.2016"));
-        save(new Laptop("ROG Strix G17", "Acer", "AMD Ryzen 5 3500U", 8, false, "plastic", new BigDecimal("700.00"), "14.08.2020"));
+        save(new Laptop(1,"MACBOOK AIR", "APPLE", "Cor i5-10300H", 16, false, "metal", new BigDecimal("25000.00"), "11.03.2019"));
+        save(new Laptop(2,"4LS70ES", "HP", "Cor i3-10200H", 8, true, "plastic", new BigDecimal("7000.00"), "15.06.2017"));
+        save(new Laptop(3,"XPS 13", "DELL", "Intel Core i5-1035G1", 12, true, "aluminium", new BigDecimal("9000.00"), "1.06.2018"));
+        save(new Laptop(4,"MacBook Pro 15", "Apple", "Intel Core i7-9750H", 16, false, "aluminium", new BigDecimal("25000.00"), "1.06.2020"));
+        save(new Laptop(5,"TUF Gaming", "ASUS", "AMD Ryzen 5 3550H", 8, true, "plastic", new BigDecimal("12000.00"), "1.06.2020"));
+        save(new Laptop(6,"Mi Notebook Pro", "Xiaomi", "Intel Core i5-8250U", 14, false, "plastic", new BigDecimal("13000.00"), "1.07.2019"));
+        save(new Laptop(7,"MateBook D 14", "Huawei", "Intel Core i5-8250U", 16, true, "plastic", new BigDecimal("5000.00"), "25.04.2016"));
+        save(new Laptop(8,"ROG Strix G17", "Acer", "AMD Ryzen 5 3500U", 8, false, "plastic", new BigDecimal("700.00"), "14.08.2020"));
     }
 }
 
